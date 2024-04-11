@@ -1,0 +1,267 @@
+
+html {
+    height: 100%;
+}
+
+
+main {
+    flex: 1;
+}
+
+body {
+    padding-top: 60px; /* Adjust based on the actual height of your header */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.contact-button {
+    background-color: #0066ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #0055cc;
+}
+
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Extra css for About us page*/
+
+.team-member {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+section#values ul {
+    list-style: inside;
+}
+
+/* Clear floats after team members */
+.team-member::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Extra css for products page */
+
+.product, .service {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.product h3, .service h3 {
+    color: #007bff;
+}
+
+
+/* Extra css for market-research page */
+
+#market-insights, #research-findings, #industry-trends {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid #007bff;
+}
+
+#market-insights h2, #research-findings h2, #industry-trends h2 {
+    color: #007bff;
+}
+
+
+/* Extra css for investors page */
+
+#investment-opportunities, #financials, #investor-resources {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#investment-opportunities h2, #financials h2, #investor-resources h2 {
+    color: #007bff;
+}
+
+/* Style for tables, charts, or other financial data presentations */
+.table-financials {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-financials th, .table-financials td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-financials th {
+    background-color: #eee;
+}
+
+
+/* Extra css for contact page */
+
+#contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-info li {
+    margin-bottom: 10px;
+}
+
+#contact-form form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Extra css for blog page */
+
+#blog-posts {
+    padding: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post-date {
+    font-style: italic;
+    color: #777;
+}
+
+.post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+
+/* Extra css for the FAQs page*/
+
+/* Add to your existing style.css */
+
+#faqs {
+    padding: 20px;
+}
+
+.faq {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.faq h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.faq p {
+    margin-top: 10px;
+}
