@@ -149,7 +149,11 @@ section {
 
 .card h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    background: linear-gradient(144deg, #66ff40, #42def3 50%, #00DDEB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Fallback for browsers that do not support background-clip */
+    -webkit-text-fill-color: transparent; /* For Webkit browsers like Safari */
 }
 
 .card p {
@@ -180,7 +184,6 @@ footer {
 /* Extra css for About us page*/
 
 .team-member {
-    background-color: #f4f4f4;
     padding: 15px;
     margin: 15px 0;
     border-radius: 5px;
@@ -202,11 +205,11 @@ section#values ul {
     list-style: inside;
 }
 
-/* Clear floats after team members */
+/* /* Clear floats after team members */
 .team-member::after {
     content: "";
     display: table;
-    clear: both;
+    /* clear: both; */
 }
 
 
