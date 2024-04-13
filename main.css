@@ -181,7 +181,7 @@ footer {
 }
 
 
-/**************************** About page ****************************/
+/**************************** about.html ****************************/
 
 .team-member {
     padding: 15px;
@@ -213,13 +213,13 @@ section#values ul {
 }
 
 
-/**************************** Blog page ****************************/
+/**************************** blog.html & faqs.html ****************************/
 
-#blog-posts {
+#posts {
     margin-top: 2rem;
 }
 
-#blog-posts .posts-container {
+#posts .posts-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,7 +242,13 @@ section#values ul {
 }
 
 .post h3 {
-    color: #007bff;
+    /* color: #007bff; */
+    font-size: 1.5rem;
+    background: linear-gradient(144deg, #66ff40, #42def3 50%, #00DDEB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Fallback for browsers that do not support background-clip */
+    -webkit-text-fill-color: transparent; /* For Webkit browsers like Safari */
 }
 
 .post .post-date {
@@ -272,29 +278,4 @@ section#values ul {
     .post {
         padding: 15px;
     }
-}
-
-
-/**************************** FAQs page ****************************/
-
-/* Add to your existing style.css */
-
-#faqs {
-    padding: 20px;
-}
-
-.faq {
-    background-color: #f9f9f9;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.faq h3 {
-    margin-top: 0;
-    color: #007bff;
-}
-
-.faq p {
-    margin-top: 10px;
 }
