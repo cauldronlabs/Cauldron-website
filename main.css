@@ -212,37 +212,6 @@ section#values ul {
     /* clear: both; */
 }
 
-/* Extra css for investors page */
-
-#investment-opportunities, #financials, #investor-resources {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-#investment-opportunities h2, #financials h2, #investor-resources h2 {
-    color: #007bff;
-}
-
-/* Style for tables, charts, or other financial data presentations */
-.table-financials {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.table-financials th, .table-financials td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-}
-
-.table-financials th {
-    background-color: #eee;
-}
-
-
 /* Extra css for contact page */
 
 #contact-info ul {
