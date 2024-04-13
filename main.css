@@ -181,7 +181,7 @@ footer {
 }
 
 
-/* Extra css for About us page*/
+/**************************** About page ****************************/
 
 .team-member {
     padding: 15px;
@@ -212,40 +212,70 @@ section#values ul {
     /* clear: both; */
 }
 
-/* Extra css for blog page */
+
+/**************************** Blog page ****************************/
 
 #blog-posts {
-    padding: 20px;
+    margin-top: 2rem;
+}
+
+#blog-posts .posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .post {
-    background-color: #f9f9f9;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between posts */
+    width: 100%; /* Full width of container */
+    max-width: 800px; /* Maximum width of posts */
+    text-align: left;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .post h3 {
-    margin-top: 0;
-}
-
-.post-date {
-    font-style: italic;
-    color: #777;
-}
-
-.post a {
-    display: inline-block;
-    margin-top: 10px;
     color: #007bff;
 }
 
-.post a:hover {
+.post .post-date {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.post p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .post {
+        padding: 15px;
+    }
+}
 
-/* Extra css for the FAQs page*/
+
+/**************************** FAQs page ****************************/
 
 /* Add to your existing style.css */
 
