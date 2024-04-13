@@ -234,6 +234,7 @@ section#values ul {
     width: 100%; /* Full width of container */
     max-width: 800px; /* Maximum width of posts */
     text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .post:hover {
