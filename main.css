@@ -212,52 +212,6 @@ section#values ul {
     /* clear: both; */
 }
 
-/* Extra css for contact page */
-
-#contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact-info li {
-    margin-bottom: 10px;
-}
-
-#contact-form form {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-#contact-form label {
-    display: block;
-    margin: 15px 0 5px;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    display: block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #0056b3;
-}
-
-
 /* Extra css for blog page */
 
 #blog-posts {
