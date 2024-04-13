@@ -157,7 +157,7 @@ section {
 }
 
 .card p {
-    color: #666;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -205,42 +205,12 @@ section#values ul {
     list-style: inside;
 }
 
-/* /* Clear floats after team members */
+/* Clear floats after team members */
 .team-member::after {
     content: "";
     display: table;
     /* clear: both; */
 }
-
-
-/* Extra css for products page */
-
-.product, .service {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-.product h3, .service h3 {
-    color: #007bff;
-}
-
-
-/* Extra css for market-research page */
-
-#market-insights, #research-findings, #industry-trends {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f4f4f4;
-    border-left: 5px solid #007bff;
-}
-
-#market-insights h2, #research-findings h2, #industry-trends h2 {
-    color: #007bff;
-}
-
 
 /* Extra css for investors page */
 
