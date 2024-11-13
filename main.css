@@ -1,282 +1,37 @@
-
-html {
-    height: 100%;
-}
-
-main {
-    flex: 1;
-}
-
-body {
-    margin-top: 120px;
-    padding-top: 60px; /* Adjust based on the actual height of your header */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.navbar {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff; /* A light background color for the navbar */
-}
-
-nav a {
-    text-align: start;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0 10px;
-    padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-}
-
-.page-title {
-    text-align: center;
-    color: #333;
-    padding: 20px 0;
-    margin: 0;
-    background-color: #fff; /* Match the background with the navbar or use a different subtle color */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.heading {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 20px 0;
-    background-image: linear-gradient(144deg,#66ff40, #42def3 50%,#00DDEB);
-}
-
-.heading h4 {
-    color: #000000;
-}
-
-.contact-button  {
-    background-color: #ffffff;
-    /* //background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); No fill color, just an outline */
-    color: #FF6A00; /* The text color */
-    border: 2px solid ;
-    border-radius: 25px; /* Rounded corners */
-    padding: 10px 20px; /* Top and bottom, Left and right padding */
-    font-size: 16px; /* Text size */
-    font-weight: bold; /* Text weight */
-    text-transform: uppercase; /* Uppercase text */
-    cursor: pointer; /* Changes the cursor to signify it's clickable */
-    text-decoration: none; /* Removes underlining from text if it's a link */
-    display: inline-block; /* Allows setting width and height */
-    
-}
-
-.contact-button:hover {
-    /* background-image: linear-gradient(144deg,#66ff40, #42def3 50%,#00DDEB); */
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    color: #FFFFFF; /* Text color on hover */
-    text-decoration: none; /* Removes underlining from text if it's a link */
-    transition: background-color 0.9s, color 0.7s; /* Smooth transition for hover effects */
-}
-
-section {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.line {
-    /* flex-grow: 1; */
-    height: 1px;
-    background-image: linear-gradient(144deg,#66ff40, #42def3 50%,#00DDEB);
-    margin: 0 90px;
-}
-
-#sections {
-    text-align: center;
-    padding: 50px 0;
-}
-
-#sections h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-}
-
-.service-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    width: calc(33.333% - 20px);
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px; /* Space between rows */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    background: linear-gradient(144deg, #66ff40, #42def3 50%, #00DDEB);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; /* Fallback for browsers that do not support background-clip */
-    -webkit-text-fill-color: transparent; /* For Webkit browsers like Safari */
-}
-
-.card p {
-    color: #000000;
-    line-height: 1.6;
-}
-
-@media (max-width: 960px) {
-    .card {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-    }
-}
-
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-}
-
-
-/**************************** about.html ****************************/
-
-.team-member {
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 15px;
-    float: left;
-}
-
-.team-member h3 {
-    margin-top: 0;
-}
-
-section#values ul {
-    list-style: inside;
-}
-
-/* Clear floats after team members */
-.team-member::after {
-    content: "";
-    display: table;
-    /* clear: both; */
-}
-
-
-/**************************** blog.html & faqs.html ****************************/
-
-#posts {
-    margin-top: 2rem;
-}
-
-#posts .posts-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between posts */
-    width: 100%; /* Full width of container */
-    max-width: 800px; /* Maximum width of posts */
-    text-align: left;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.post:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.post h3 {
-    /* color: #007bff; */
-    font-size: 1.5rem;
-    background: linear-gradient(144deg, #66ff40, #42def3 50%, #00DDEB);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; /* Fallback for browsers that do not support background-clip */
-    -webkit-text-fill-color: transparent; /* For Webkit browsers like Safari */
-}
-
-.post .post-date {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.post p {
-    color: #333;
-    line-height: 1.6;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .post {
-        padding: 15px;
-    }
-}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+        }
+        .logo {
+            max-width: 150px; /* Adjust size as necessary */
+            margin-bottom: 1rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px 0;
+        }
+        .heading {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .subheading {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .contact {
+            font-size: 0.9rem;
+            color: #333;
+            text-decoration: none;
+        }
