@@ -1,37 +1,89 @@
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            width: 90%;
-        }
-        .logo {
-            max-width: 150px; /* Adjust size as necessary */
-            margin-bottom: 1rem;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 40px 0;
-        }
-        .heading {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        .subheading {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-        .contact {
-            font-size: 0.9rem;
-            color: #333;
-            text-decoration: none;
-        }
+/* Body styling: center content both vertically and horizontally, full viewport height */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take up the full height of the viewport */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Set the default font */
+    background-color: #fff; /* Set background color to white */
+    color: #333; /* Default text color */
+    text-align: center; /* Center the text */
+}
+
+/* Container styling: control the width and responsiveness of the main container */
+.container {
+    max-width: 600px; /* Limit the maximum width of the container */
+    width: 90%; /* Make it responsive to the viewport */
+}
+
+/* Logo styling: set size and margin */
+.logo {
+    max-width: 150px; /* Limit the maximum width of the logo */
+    margin-bottom: 1rem; /* Space below the logo */
+}
+
+/* General Fade-In Keyframes for the elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+/* Heading styling: set size and spacing */
+.heading {
+    font-size: 1.8rem; /* Font size for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+/* Construction line styling: centering and initial opacity for fade-in */
+.construction-line {
+    display: flex; /* Use flex to align the content */
+    align-items: center; /* Vertically center align */
+    justify-content: center; /* Horizontally center align */
+    margin: 20px 0; /* Space above and below */
+    position: relative; /* Relative positioning for ::before and ::after */
+    opacity: 0; /* Initial opacity set to 0 for fade-in */
+}
+
+/* Pseudo-elements for horizontal line before and after the construction text */
+.construction-line::before,
+.construction-line::after {
+    content: ''; /* Empty content to create the line */
+    flex: 1; /* Flex-grow to take equal space before and after */
+    margin: 0 10px; /* Space on both sides of the text */
+}
+
+/* Styling for text inside construction line */
+.construction-line span {
+    font-size: 1.2rem; /* Font size of the text */
+    color: #555; /* Slightly lighter color for subtlety */
+    font-weight: 300; /* Light font weight for minimal look */
+    letter-spacing: 0.5px; /* Spacing between letters for a modern touch */
+    font-style: italic; /* Italic styling for a professional feel */
+}
+
+/* Contact styling: similar to the construction line span */
+.contact {
+    font-size: 1.2rem; /* Font size of the contact text */
+    color: #555; /* Slightly lighter color */
+    font-weight: 300; /* Light font weight */
+    letter-spacing: 0.5px; /* Spacing between letters */
+    font-style: italic; /* Italic style */
+    opacity: 0; /* Initial opacity set to 0 for fade-in */
+}
+
+/* Fade-in animation for group 1 (logo, heading, and first line) */
+.fade-in-group-1 {
+    animation: fadeIn 2s ease-in forwards; /* Fade in animation lasting 2 seconds */
+    animation-delay: 0.5s; /* Start after a delay of 0.5 seconds */
+}
+
+/* Fade-in animation for group 2 (construction message, contact) and hr element */
+.fade-in-group-2, hr {
+    animation: fadeIn 2s ease-in forwards; /* Fade in animation lasting 2 seconds */
+    animation-delay: 3s; /* Start after a delay of 3 seconds */
+}
