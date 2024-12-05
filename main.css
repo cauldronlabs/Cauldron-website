@@ -6,7 +6,7 @@ body {
     height: 100vh; /* Take up the full height of the viewport */
     margin: 0;
     font-family: Arial, sans-serif; /* Set the default font */
-    background-color: #fff; /* Set background color to white */
+    background-color: #f9f9f9; /* Light background for a minimalist look */
     color: #333; /* Default text color */
     text-align: center; /* Center the text */
 }
@@ -19,8 +19,8 @@ body {
 
 /* Logo styling: set size and margin */
 .logo {
-    max-width: 150px; /* Limit the maximum width of the logo */
-    margin-bottom: 1rem; /* Space below the logo */
+    max-width: 100px; /* Limit the maximum width of the logo for a minimalist feel */
+    margin-bottom: 1.5rem; /* Space below the logo */
 }
 
 /* General Fade-In Keyframes for the elements */
@@ -35,55 +35,33 @@ body {
 
 /* Heading styling: set size and spacing */
 .heading {
-    font-size: 1.8rem; /* Font size for the heading */
+    font-size: 1.6rem; /* Slightly smaller font size for a minimal look */
+    font-weight: 400; /* Regular font weight for a minimalist feel */
     margin-bottom: 1rem; /* Space below the heading */
+    color: #444; /* Slightly softer color for a more subtle look */
 }
 
 /* Construction line styling: centering and initial opacity for fade-in */
 .construction-line {
-    display: flex; /* Use flex to align the content */
-    align-items: center; /* Vertically center align */
-    justify-content: center; /* Horizontally center align */
-    margin: 20px 0; /* Space above and below */
-    position: relative; /* Relative positioning for ::before and ::after */
     opacity: 0; /* Initial opacity set to 0 for fade-in */
-}
-
-/* Pseudo-elements for horizontal line before and after the construction text */
-.construction-line::before,
-.construction-line::after {
-    content: ''; /* Empty content to create the line */
-    flex: 1; /* Flex-grow to take equal space before and after */
-    margin: 0 10px; /* Space on both sides of the text */
+    margin: 10px 0; /* Space above and below the construction message */
 }
 
 /* Styling for text inside construction line */
-.construction-line fade-in-group-1 span {
-    font-size: 1.2rem; /* Font size of the text */
-    color: #555; /* Slightly lighter color for subtlety */
-    font-weight: 300; /* Light font weight for minimal look */
-    letter-spacing: 0.5px; /* Spacing between letters for a modern touch */
-    font-style: italic; /* Italic styling for a professional feel */
-}
-
-/* Contact styling: similar to the construction line span */
-.contact {
-    font-size: 1.2rem; /* Font size of the contact text */
-    color: #555; /* Slightly lighter color */
-    font-weight: 300; /* Light font weight */
-    letter-spacing: 0.5px; /* Spacing between letters */
-    font-style: italic; /* Italic style */
-    opacity: 0; /* Initial opacity set to 0 for fade-in */
+.construction-line span {
+    font-size: 1rem; /* Smaller font size for a minimal effect */
+    color: #555; /* Muted gray for a minimalist effect */
+    font-weight: 300; /* Light font weight for simplicity */
 }
 
 /* Fade-in animation for group 1 (logo, heading, and first line) */
 .fade-in-group-1 {
-    animation: fadeIn 2s ease-in forwards; /* Fade in animation lasting 2 seconds */
+    animation: fadeIn 1.5s ease-in forwards; /* Fade in animation lasting 1.5 seconds */
     animation-delay: 0.5s; /* Start after a delay of 0.5 seconds */
 }
 
-/* Fade-in animation for group 2 (construction message, contact) and hr element */
-.fade-in-group-2, hr {
-    animation: fadeIn 2s ease-in forwards; /* Fade in animation lasting 2 seconds */
-    animation-delay: 3s; /* Start after a delay of 3 seconds */
+/* Fade-in animation for group 2 (construction message, contact) */
+.fade-in-group-2 {
+    animation: fadeIn 1.5s ease-in forwards; /* Fade in animation lasting 1.5 seconds */
+    animation-delay: 2s; /* Start after a delay of 2 seconds */
 }
