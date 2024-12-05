@@ -6,7 +6,6 @@ body {
     height: 100vh; /* Take up the full height of the viewport */
     margin: 0;
     font-family: Arial, sans-serif; /* Set the default font */
-    color: #333; /* Default text color */
     text-align: center; /* Center the text */
 }
 
@@ -18,7 +17,7 @@ body {
 
 /* Logo styling: set size and margin */
 .logo {
-    max-width: 100px; /* Limit the maximum width of the logo for a minimalist feel */
+    max-width: 170px; /* Limit the maximum width of the logo for a minimalist feel */
     margin-bottom: 1.5rem; /* Space below the logo */
 }
 
@@ -37,7 +36,6 @@ body {
     font-size: 1.6rem; /* Slightly smaller font size for a minimal look */
     font-weight: 400; /* Regular font weight for a minimalist feel */
     margin-bottom: 1rem; /* Space below the heading */
-    color: #444; /* Slightly softer color for a more subtle look */
 }
 
 /* Construction line styling: centering and initial opacity for fade-in */
@@ -49,7 +47,6 @@ body {
 /* Styling for text inside construction line */
 .construction-line span {
     font-size: 1rem; /* Smaller font size for a minimal effect */
-    color: #555; /* Muted gray for a minimalist effect */
     font-weight: 300; /* Light font weight for simplicity */
 }
 
