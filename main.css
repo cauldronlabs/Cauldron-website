@@ -17,6 +17,7 @@ body {
 
 /* Logo styling: set size and margin */
 .logo {
+    opacity: 0; /* Initial opacity set to 0 for fade-in */
     max-width: 170px; /* Limit the maximum width of the logo for a minimalist feel */
     margin-bottom: 1.5rem; /* Space below the logo */
 }
@@ -33,6 +34,7 @@ body {
 
 /* Heading styling: set size and spacing */
 .heading {
+    opacity: 0; /* Initial opacity set to 0 for fade-in */
     font-size: 1.6rem; /* Slightly smaller font size for a minimal look */
     font-weight: 400; /* Regular font weight for a minimalist feel */
     margin-bottom: 1rem; /* Space below the heading */
