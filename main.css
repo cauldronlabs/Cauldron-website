@@ -58,7 +58,7 @@ body {
 }
 
 /* Styling for text inside construction line */
-.construction-line span {
+.construction-line fade-in-group-1 span {
     font-size: 1.2rem; /* Font size of the text */
     color: #555; /* Slightly lighter color for subtlety */
     font-weight: 300; /* Light font weight for minimal look */
