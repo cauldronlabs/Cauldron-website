@@ -9,6 +9,7 @@ body {
     text-align: center; /* Center the text */
 }
 
+
 /* Container styling: control the width and responsiveness of the main container */
 .container {
     max-width: 600px; /* Limit the maximum width of the container */
@@ -53,20 +54,37 @@ body {
 }
 
 .join-waitlist {
-    padding: 8px 12px;
-    border: 1px outset #000; /* Adjust color */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between elements */
+    padding: 8px 16px;
+    border: 2px solid #333;
     border-radius: 25px;
-    color: #000; /* Adjust color */
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+    cursor: pointer;
+    position: relative;
 }
 
-.join-waitlist:hover, .join-waitlist:focus {
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: white;
+.join-waitlist img.hover-image {
+    width: 20px; /* Set fixed size */
+    height: 20px; 
+}
+
+
+.join-waitlist:hover, .join-waitlist:hover .hover-image, .join-waitlist:focus {
     background-color: black;
-    outline: none; /* Optional: Remove default focus outline */
+    color: white;
+    animation-delay: 0.5s; /* Start after a delay of 0.5 seconds */
+    animation: fadeIn 0.6s ease-in forwards; /* Fade in animation lasting 1.5 seconds */
+    .hover-image {
+        content: url(imgs/waitlist-dark.png);
+    }
 }
 
 /* Fade-in animation for group 1 (logo, heading, and first line) */
