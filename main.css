@@ -72,7 +72,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color
+    transition: background-color 2s;
 }
 
 
