@@ -52,6 +52,23 @@ body {
     font-weight: 300; /* Light font weight for simplicity */
 }
 
+.join-waitlist {
+    padding: 8px 12px;
+    border: 1px outset #000; /* Adjust color */
+    border-radius: 25px;
+    color: #000; /* Adjust color */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.join-waitlist:hover, .join-waitlist:focus {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    background-color: black;
+    outline: none; /* Optional: Remove default focus outline */
+}
+
 /* Fade-in animation for group 1 (logo, heading, and first line) */
 .fade-in-group-1 {
     animation: fadeIn 1.5s ease-in forwards; /* Fade in animation lasting 1.5 seconds */
